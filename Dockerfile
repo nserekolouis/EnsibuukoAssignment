@@ -7,10 +7,8 @@ RUN apt install nodejs
 
 ADD . .
 
-# RUN npm install
-# RUN composer install --verbose
 RUN apt-get update
-RUN apt-get install -y mysql-client libpng-dev
+RUN apt-get install -y default-mysql-client libpng-dev
 RUN docker-php-ext-install pdo_mysql
 
 RUN composer install
