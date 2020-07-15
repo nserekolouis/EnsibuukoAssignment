@@ -44746,7 +44746,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "panel-body" }, [
               _vm._v(
-                "\n                    This is vue code being loaded 1!\n                "
+                "\n                    This is vue code being loaded!\n                "
               )
             ])
           ])

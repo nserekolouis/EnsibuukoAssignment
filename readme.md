@@ -5,6 +5,15 @@
 1. Run `docker-compose up -d`
 1. Run `docker exec -it assignment-project npm run watch` to build/watch with webpack
 1. Visit [http://localhost:8085](http://localhost:8085) to see the page.
+1. Connect to the MySQL db with these creds: 
+
+```
+host:       127.0.0.1
+port:       3308
+db:         assignment
+username:   assignment
+password:   secret
+```
 
 # Interacting with the Docker Container
 
