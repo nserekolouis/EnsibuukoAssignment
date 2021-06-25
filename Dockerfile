@@ -1,5 +1,7 @@
 FROM webdevops/php-nginx:7.1
 
+RUN composer self-update --1
+
 WORKDIR /var/www/html/public
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
