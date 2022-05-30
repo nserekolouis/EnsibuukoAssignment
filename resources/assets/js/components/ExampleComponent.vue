@@ -6,7 +6,7 @@
                     <br>
                     <hr>
                     <br>
-                    <div class="panel-heading">Vuejs also welcomes you!</div>
+                    <div class="panel-heading">{{message}} Vuejs also welcomes you!</div>
                     <br>
                     <div class="panel-body">
                         This is vue code being loaded!
@@ -18,9 +18,22 @@
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+
+import axios from 'axios';
+
+export default {
+  
+  data: () => ({
+    message: '',
+  }),
+
+  mounted() {
+    console.log('Component mounted.');
+    axios
+    .get(`/api/v1/test`)
+    .then((response) => {
+      this.message = response.data.message;
+    });
+  }
+}
 </script>
