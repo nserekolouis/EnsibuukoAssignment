@@ -33,7 +33,7 @@ class Transaction extends Model
        */
 
        public function sacco(){
-         return $this->hasManyThough('App\Models\Sacco','App\Model\Individuals');
+         return $this->hasManyThrough('App\Models\Sacco','App\Model\Individuals');
        }
 
       //scope
