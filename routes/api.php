@@ -22,7 +22,7 @@ Route::group(
         'prefix' => '/v1',
     ],
     function () {
-        Route::get('/test', 'TestApiController@index')->name('test.index');
-        
+        Route::get('/getTransactions', 'TestApiController@getTransactions')->name('transactions');
+        Route::post('/getFilteredTransactions', 'TestApiController@getFilteredTransactions')->name('filter.transactions');
     }
 );
